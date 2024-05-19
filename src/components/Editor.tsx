@@ -57,13 +57,16 @@ const Editor = ({ themeIsToggled }: any) => {
   });
 
   const handleSave = () => {
-    const blob = new Blob([markdownContent], { type: 'text/markdown' });
-    const a = document.createElement('a');
+    const documentName = prompt("What will be the name of the document?");
+    if (documentName !== null) {
+      const blob = new Blob([markdownContent], { type: 'text/markdown' });
+      const a = document.createElement('a');
 
-    a.href = window.URL.createObjectURL(blob);
-    a.download = String(prompt('Document Name')) + '.md';
-    a.click();
-  };
+      a.href = window.URL.createObjectURL(blob);
+      a.download = documentName + '.md';
+      a.click();
+    }
+};
 
   return (
     <>
