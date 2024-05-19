@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode {
+  background-color: #1a1919;
+  color: #999;
+}
+
+
+/* Placeholder (at the top) */
+.tiptap .is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Decrease the width of the scrollbar */
+  height: 5px; /* Decrease the height of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e7e3e3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e6e2e2;
+  border-radius: 999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
