@@ -25,7 +25,7 @@ const App = () => {
         </main>
       </div>
       <footer className='text-center'>
-        <span>© 2024 Markdown Editx by roamingdx. All rights reserved</span>
+        <span>© 2024 Markdown Editx by roamingdx & João Marcon. All rights reserved</span>
       </footer>
     </div>
   )
