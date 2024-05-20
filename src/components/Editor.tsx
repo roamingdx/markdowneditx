@@ -34,7 +34,7 @@ const Editor = ({ themeIsToggled }: any) => {
       Link,
       StarterKit,
       Placeholder.configure({
-        placeholder: 'Write something... Select everything and save'
+        placeholder: 'Write something... Formatting will take place after you select a particular field (or the entire document), whether to style the fonts, add links or save your document.'
       }),
       Highlight.configure({
         multicolor: true,
